@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def about
+  	@name = "#{params[:first_name]} #{params[:last_name]}"
   end
 
   def math
