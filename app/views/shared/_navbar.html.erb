@@ -1,15 +1,8 @@
 <ul>
-	<li>版型練習1</li>
-	<li>版型練習2</li>
-	<li>版型練習3</li>
+	<li><%= link_to 'Home', root_path %></li>
+	<li><%= link_to 'About', about_path %></li>
+	<li><%= link_to 'Math', math_path %></li>
 </ul>
-
-<div>
-	<p>catch variable when render:</p>
-	<% line_number.times do  %>
-		<hr>
-	<% end %>
-</div>
 
 <!-- the partial's name has to be start at '_' (under line)
 	if the render page didn't specify the parent dir, it will find the partail in the controller which the view belongs to -->
