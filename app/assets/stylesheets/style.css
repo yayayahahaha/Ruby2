@@ -1,4 +1,8 @@
+
+/* = require more */
+
+/* the comment line up there has meaning!! it include more.css file into html, too!!*/
 body{
-	color: #141414;
+	color: blue;
 	font-weight: bolder;
 }
