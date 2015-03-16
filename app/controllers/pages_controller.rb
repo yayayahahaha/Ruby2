@@ -11,7 +11,7 @@ class PagesController < ApplicationController
 
     def about
         @name = "#{params[:first_name]} #{params[:last_name]}"
-        render layout: 'admin'
+        # render layout: 'admin'
     end
 
     def math
