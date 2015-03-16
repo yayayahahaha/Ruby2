@@ -15,6 +15,11 @@
  */
 
 li.class_name > a{
-	font-size: 2em;
+	font-size: 1.5em;
+	font-weight: bold;
 	color:red;
+}
+
+ul > li {
+	
 }
