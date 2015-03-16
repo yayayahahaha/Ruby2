@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get :home, :math, :form, controller: 'pages'
+  get :home, :math, :form, :about, controller: 'pages'
 
   # get :about, controller: 'pages', path: :me
 
