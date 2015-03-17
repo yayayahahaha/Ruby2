@@ -4,7 +4,6 @@ class Post < ActiveRecord::Base
   validate :title_must_start_with_x
   before_validation :set_content_from_title
 
-
   def title_must_start_with_x
     unless title.to_s.start_with? 'X'
       errors.add :title, 'must start with "X"'
@@ -14,6 +13,8 @@ class Post < ActiveRecord::Base
   def set_content_from_title
     self.content = title if content.blank?
   end
+
+  belongs_to :user
 
 
 
