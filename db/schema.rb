@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317120354) do
+ActiveRecord::Schema.define(version: 20150317121403) do
 
   create_table "posts", force: :cascade do |t|
     t.text    "title"
     t.text    "content"
-    t.integer "view_count"
+    t.integer "views"
   end
 
 end
