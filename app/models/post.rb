@@ -1,3 +1,4 @@
+#encoding: UTF-8
 class Post < ActiveRecord::Base
   validates :title, :content, presence: true
   validate :title_must_start_with_x
