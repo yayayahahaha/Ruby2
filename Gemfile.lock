@@ -120,6 +120,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    seed_dump (3.2.2)
+      activerecord (~> 4)
+      activesupport (~> 4)
     slop (3.6.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -162,6 +165,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  seed_dump
   sqlite3
   turbolinks
   tzinfo-data
