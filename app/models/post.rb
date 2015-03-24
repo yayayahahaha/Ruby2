@@ -1,5 +1,6 @@
 #encoding: UTF-8
 class Post < ActiveRecord::Base
+	has_and_belongs_to_many :tags
 	validates :title, :content, presence: true
 	before_validation :set_content_from_title
 	validate :title_must_start_with_T
