@@ -1,2 +1,8 @@
 <h1>Posts#new</h1>
 <p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_tag posts_path do %>
+	<%= text_field_tag :title %> <br>
+	<%= text_area_tag :content %>
+	<input type="submit">
+<% end %>
