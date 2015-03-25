@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+    resources :posts
 
-  get :home, :math, :form, :about, controller: 'pages'
+    root 'pages#home'
 
-  # get :about, controller: 'pages', path: :me
+    get :home, :math, :form, :about, controller: 'pages'
 
-  post :about, controller: :pages
+    # get :about, controller: 'pages', path: :me
 
-  # the " path: :method_name " can easily change the link we set in every actions which have the link
+    post :about, controller: :pages
+
+    # the " path: :method_name " can easily change the link we set in every actions which have the link
 
 end
